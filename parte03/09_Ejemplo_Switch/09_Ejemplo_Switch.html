@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo Switch</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("Elige la opción:");
+        console.log("1- Insertar dato.");
+        console.log("2- Editar dato.");
+        console.log("3- Eliminar dato.");
+        console.log("4- Salir.");
+
+        let opcion = parseInt(prompt("Elige una opción.")); // Creamos una variable y guardamos el valor. 
+        console.log();
+        switch (opcion) // Vamos a hacer un switch basándonos en el valor de la variable opcion
+        {
+            case 1: // En el caso de que el valor de la variable opcion sea 1
+                console.log("Elegiste insertar dato."); // Mostrar en pantalla un mensaje indicando que se eligió la primera opción
+                break; // Si llegamos a esta instrucción (por estar dentro del case 1) esto hace que salgamos del switch (pasamos a la línea 41)
+
+            case 2: // En el caso de que el valor de la variable opcion sea 2
+                console.log("Elegiste editar dato"); // Mostrar en pantalla un mensaje indicando que se eligió la segunda opción
+                break; // Si llegamos a esta instrucción (por estar dentro del case 2) esto hace que salgamos del switch (pasamos a la línea 41)
+
+            case 3: // En el caso de que el valor de la variable opcion sea 3
+                console.log("Elegiste eliminar dato"); // Mostrar en pantalla un mensaje indicando que se eligió la segunda opción
+                break; // Si llegamos a esta instrucción (por estar dentro del case 3) esto hace que salgamos del switch (pasamos a la línea 41)
+
+            case 4: // En el caso de que el valor de la variable opcion sea 4
+                console.log("Elegiste salir del programa"); // Mostrar en pantalla un mensaje indicando que se eligió la tercera opción
+                break; // Si llegamos a esta instrucción (por estar dentro del case 4) esto hace que salgamos del switch (pasamos a la línea 41)
+
+            default: // En el caso de que el valor de la variable opcion no sea ninguno de los que aparece en los case
+                console.log("Opción erronea"); // Mostrar en pantalla un mensaje indicando que se eligió la cuarta opción
+                break; // Si llegamos a esta instrucción (por estar dentro del default) esto hace que salgamos del switch (pasamos a la línea 41)
+        }
+    </script>
+</body>
+
+</html>

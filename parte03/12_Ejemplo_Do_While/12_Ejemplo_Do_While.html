@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo Do While</title>
+</head>
+
+<body>
+    <script>
+        let numero; // Crea una variable de número entero en la que guardaremos el valor introducido por el usuario
+
+        numero = parseInt(prompt("Introduce un número: ")); // Pide un número al usuario. Convierte lo que el usuario introduce a un número entero y lo guarda en la variable numero
+
+        while (numero != 0) // Mientras el valor de la variable numero no sea igual a 0, repetir el código entre { y }
+        {
+            numero = parseInt(prompt("Introduce un número: ")); // Pide un número al usuario. Convierte lo que el usuario introduce a un número entero y lo guarda en la variable numero
+            console.log(numero); // Muestra el valor de la variable numero en pantalla
+        }
+
+        do // Marca el inicio del código que se repetirá, pero al pasar por primera vez empieza a ejecutarlo sin ninguna condición
+        {
+            numero = parseInt(prompt("Introduce un número:")); // Pide un número al usuario. Convierte lo que el usuario introduce a un número entero y lo guarda en la variable numero
+            console.log(numero); // Muestra el valor de la variable numero en pantalla
+        } while (numero != 0); // Mientras la variable no sea 0, hace que el código se repita desde después del do hasta aquí
+    </script>
+</body>
+
+</html>

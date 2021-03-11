@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+         * Al unir cadenas de texto, el ordenador las une
+         * sin añadir nada. Por lo tanto, en este ejemplo
+         * las palabras aparecen sin espacio entre ellas.
+         */
+        console.log("<p>Hola" + "mundo</p>");
+        console.log(); // Si no pasamos nada a console.log, añade una linea vacia a la pantalla.
+
+        /*
+         * Podemos añadir un espacio al final de la primera
+         * palabra, o un epacio al final de la segunda,
+         * o añadir una palabra que sea solo un espacio
+         * entre las dos. Los próximos 3 ejemplos muestra
+         * exactamente el mismo mensaje en pantalla
+         */
+         console.log("Hola " + "mundo"); // Espacio al final de hola
+         console.log("Hola" + " mundo"); // Espacio antes de mundo
+         console.log("Hola" + " " + "mundo"); // Una cadena de carácteres de solo un espacio añadido entre hola y mundo.
+
+        console.log(); // Utilizado para separar en pantalla lo que aparece
+
+        console.log("Tengo" + 2 + "manzanas"); // Si añadimos un valor numérico, console.log lo convierte en texto
+        console.log("Tengo " + 2 + " manzanas"); // Pero hay que seguir añadiendo los espacios del mismo modo que antes.
+
+        /*
+         * Al convertir valores numéricos a texto, estos se
+         * utilizan como texto el resto del tiempo.
+         * Por esta razón en el siguiente ejemplo el 2 se
+         * convierte en texto y el texto "Tengo 2" se une al
+         * valor numérico 3. Como 2 se considera texto, el
+         * resultado es "Tengo 23".
+         * Para evitar que se haga en este orden y no sumemos
+         * los valores numéricos (que en este caso queremos
+         * hacer) utilizamos los paréntesis. En el segundo ejemplo
+         * 2 y 3 son valores numéricos cuando se suman entre
+         * ellos, y no se convierten en texto hasta una vez hecha
+         * la suma
+         */
+        console.log("Tengo " + 2 + 3 + " manzanas"); // Muestra Tengo 23 manzanas en pantalla
+        console.log("Tengo " + (2 + 3) + " manzanas"); // Muestra Tengo 5 manzanas en pantalla
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo For</title>
+</head>
+
+<body>
+    <script>
+        let numero; // Creamos una variable
+        numero = 1; // Asignamos 1 a la variable
+
+        while (numero <= 5) // Mientras la variable numero tenga un valor igual o menor que 5, repetiremos el código entre { y }
+        {
+            console.log("El número es " + numero); // Mostrar en pantalla el valor de la variable numero
+            numero = numero + 1; // Añadir 1 al valor de la variable número
+        }
+        console.log("Después del bucle, el número es : " + numero); // Mostrar en pantalla el valor de la variable número después de el bucle while
+
+        // Bucle for que se va a repetir mientras la variable i (iniciada con un valor de 1) sea menor o igual a 5.
+        // Cada vez que el bucle acaba, añadimos 1 al valor de la variable i
+        for (let i = 1; i <= 5; i = i + 1) {
+            console.log("El valor de i es " + i); // Mostrar en pantalla el valor de la variable i
+        }
+
+        console.log("Después del bucle, i deja de existir"); // Tras el bucle, la variable i no existe por lo que no podemos mostrar su valor.
+        console.log(i); // esta variable no existe fuera del bucle, por lo que su valor es undefined (no definido)
+    </script>
+</body>
+
+</html>

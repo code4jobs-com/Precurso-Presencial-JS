@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo If Else</title>
+</head>
+
+<body>
+    <script>
+        let vip; // Creamos una variable booleana
+        vip = true; // Le asignamos valor true
+        if (vip) // Si vip tiene valor true...
+        {
+            console.log("Cliente VIP."); // Mostrar mensaje en pantalla
+        }
+        // Ahora comprobaremos si vip tiene valor falso.
+        // Si vip tenía valor verdadero, no debería hacer falta comprobarlo
+        if (!vip) {
+            console.log("Cliente no VIP.");
+        }
+
+        if (vip) {
+            console.log("Cliente VIP.");
+        }
+        else // Con if ... else... no tenemos que comprobar lo contrario de lo anterior, 
+        // si el anterior es falso este se ejecuta
+        {
+            console.log("Cliente no VIP.");
+        }
+    </script>
+</body>
+
+</html>

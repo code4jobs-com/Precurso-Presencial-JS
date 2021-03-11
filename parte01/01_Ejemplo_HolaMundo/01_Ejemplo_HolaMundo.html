@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!--
+Las páginas web se escriben con un lenguaje llamado HTML. Estos a su vez constan 
+de dos partes. Por un lado, la información que utiliza la página para cosas extra
+que no aparecen en la página en sí (por ejemplo, el título de la página que aparece
+en la pestaña de navegadores, o información sobre en qué idioma está la página). Por
+otro, lo que vemos en la página en sí, ya sea el texto, las imágenes, los enlaces, ...
+
+Aunque podamos ver páginas antiguas, HTML ha ido cambiando con el tiempo. La línea
+<!DOCTYPE html> le dice al navegador que esta página está escrita en la última versión
+de HTML (HTML 5).
+
+En html, marcamos los _elementos_ que aparecen en la página web con etiquetas. Estas
+empiezan con <nombreEtiqueta> y acaban con </nombreEtiqueta>. Lo que esté entre la
+etiqueta de apertura ( <...> ) y la etiqueta de cierre ( </...> ) es el contenido
+del elemento.
+
+Por lo tanto, podemos ver que el elemento html (marcado con la etiqueta <html>) envuelve
+toda la página, y que está a su vez dividia en dos elementos ( el head y el body ). El head
+es aquel en el que añadimos la información "no visible" en la página, en este caso hemos
+puesto de title "Página Básica". Veremos este texto como título de la pestaña del navegador,
+y si la guardamos como favorita será el texto por defecto que aparezca.
+
+En el body por otro lado tenemos el _contenido_ de la página, en este caso tenemos una
+cabecera (marcado con etiqueta h1 , del inglés header y nivel 1 - el más grande) con el
+texto título y un párrafo (con etiqueta p).
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página básica</title>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Texto de párrafo</p>
+
+    <script>
+        console.log("Hola Mundo");
+    </script>
+</body>
+</html>

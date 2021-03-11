@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo For 3</title>
+</head>
+
+<body>
+    <script>
+        let nombreCarta;
+        for (let palo = 1; palo <= 4; palo = palo + 1) {
+            for (let valor = 1; valor <= 10; valor = valor + 1) {
+                if (valor == 1) {
+                    nombreCarta = "As";
+                }
+                else if (valor == 8) {
+                    nombreCarta = "Sota";
+                }
+                else if (valor == 9) {
+                    nombreCarta = "Caballo";
+                }
+                else if (valor == 10) {
+                    nombreCarta = "Rey";
+                }
+                else {
+                    nombreCarta = valor;
+                }
+
+                nombreCarta = nombreCarta + " de ";
+
+                if (palo == 1) {
+                    nombreCarta = nombreCarta + "Oros";
+                }
+                else if (palo == 2) {
+                    nombreCarta = nombreCarta + "Copas";
+                }
+                else if (palo == 3) {
+                    nombreCarta = nombreCarta + "Espadas";
+                }
+                else if (palo == 4) {
+                    nombreCarta = nombreCarta + "Bastos";
+                }
+
+                console.log(nombreCarta);
+            }
+        }
+    </script>
+</body>
+
+</html>

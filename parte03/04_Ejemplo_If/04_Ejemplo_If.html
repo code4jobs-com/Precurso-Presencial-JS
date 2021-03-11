@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo If</title>
+</head>
+
+<body>
+    <script>
+        if (true) // Siempre se ejecuta
+        {
+            console.log("Siempre se ejecuta esto");
+        }
+        if (false) // Nunca se ejecuta (fijate como Visual Studio Code marca la instrucción advirtiéndonos de que nunca se ejecuta
+        {
+            console.log("Nunca se ejecutará");
+        }
+        if (3 < 5) // Siempre se ejecutará ya que el resultado siempre será true
+        {
+            console.log("3 es menor que 5.");
+        }
+
+        let edad = prompt("¿Cuantos años tienes?"); // Mostramos mensaje en pantalla y leemos la edad que escribe el usuario
+
+        console.log("Tienes " + edad + " años."); // Mostramos la edad introducida en pantalla
+        if (edad >= 18) // Si la edad es mayor o igual a 18 mostramos un mensaje
+        {
+            console.log("Eres mayor de edad.");
+        }
+
+        let vip;
+        vip = true; // Creamos variable VIP y le asignamos el valor true
+        if (vip == true) // Aunque este modo funcione, es redundante
+        {
+            console.log("Cliente VIP.");
+        }
+        if (vip) // Funciona igual que el if anterior, mostrando que igualarlo a true es redundante
+        {
+            console.log("Cliente VIP.");
+        }
+
+        vip = false; // Pongamos ahora el valor false en vip
+        if (!vip) // Este es el modo de comprobar si la variable tiene un valor false
+        {
+            console.log("Cliente no VIP.");
+        }
+    </script>
+</body>
+
+</html>

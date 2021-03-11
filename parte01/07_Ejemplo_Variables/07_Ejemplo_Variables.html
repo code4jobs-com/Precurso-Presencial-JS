@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+         * En el siguiente ejemplo podéis ver que 
+         * el ordenador hace lo mismo que si escribieramos
+         * console.log("Hola Mundo con variables");
+         * pero primero ponemos el mensaje en una variable
+         * y la nombramos saludo.
+         * Después a console.log le decimos que coja
+         * el valor que hay dentro de la variable saludo
+         */
+        let saludo; // crea una variable  llamada saludo
+        saludo = "Hola Mundo con variables"; // Le damos a la variable saludo el valor "Hola Mundo con variables"
+        console.log(saludo); // Muestra en pantalla el valor de la variable saludo, es decir, "Hola Mundo con variables"
+
+        /*
+         * Hagamos lo mismo con una variable y valor de 
+         * variable diferente. Una vez más, creamos una variable
+         * diciendo que queremos una variable que se llama frase: 
+         *     let frase;
+         * Después podemos utilizar el nombre de la variable
+         * para referirnos al valor que tiene dentro.
+         */
+
+        let frase; // Crea una variable llamada frase
+        frase = "Tengo " + 2 + " manzanas"; // Le damos a la variable frase el valor "Tengo 2 manzanas"
+        console.log(frase); // Muestra en pantalla el valor de la variable frase, es decir, "Tengo 2 manzanas"
+
+        /*
+         * Ya que hemos creado la variable saludo antes, esta sigue 
+         * existiendo y podemos reutilizarla para ver que su valor
+         * sigue siendo el mismo.
+         */
+        console.log(saludo); // Muestra en pantalla "Hola Mundo con variables"
+    </script>
+</body>
+
+</html>

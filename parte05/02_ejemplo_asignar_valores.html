@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+ * Al igual que podemos acceder a un valor del array, también podemos asignarle un valor o modificar el valor de una posición
+ */
+
+        /*Primero declaramos el array.
+         * Todavía en este momento no le hemos asignado ningún valor, simplemente hemos creado un array vacío.
+         * 
+         * Pero, ¿Qué pasa si intentamos darle el valor de una posición el array a una variable? Que esa variable será "undefined" (no definida).
+         * Para comprobarlo vamos a crear un array vacío y darle el valor de 3 posiciones distintas de este a 3 variables.
+         */
+
+        let notasAlumnos = []
+
+        /*
+         * Almacenamos el valor de cada posición en una variable cuyo nombre coincide con la posición que ocupa
+         */
+        let posicion0 = notasAlumnos[0];
+        let posicion1 = notasAlumnos[1];
+        let posicion2 = notasAlumnos[2];
+
+        /*
+         * después mostramos por pantalla el valor de cada una de las posiciones del array 
+         */
+
+        console.log(posicion0);
+        console.log(posicion1);
+        console.log(posicion2);
+
+
+        //Después, asignamos a cada una de las posiciones un valor
+
+        notasAlumnos[0] = 5; //Asignamos a la posición 0 el valor 5
+        notasAlumnos[1] = 8; //Asignamos a la posición 1 el valor 8
+        notasAlumnos[2] = 10; //Asignamos a la posición 2 el valor 10
+
+        //Por último, mostramos por consola el valor de cada una de las posiciones
+        console.log(notasAlumnos[0]);
+        console.log(notasAlumnos[1]);
+        console.log(notasAlumnos[2]);
+
+    </script>
+</body>
+
+</html>

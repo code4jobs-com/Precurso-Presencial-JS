@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+ * Para faciitarnos este trabajo podemos utilizar una propiedad que hemos visto anteriormente con las cadenas de texto y que también vamos a utilizar con los arrays: 
+ * .length, esta propiedad, en el caso de las cadenas de texto (string), nos devolvía el número de caracteres que formaban parte de la cadena. 
+ * En el caso de los arrays nos devuleve el nº de valores que almacena el array.
+ */
+
+        //Como siempre primero decalaramos el array y le asignamos los valores que queramos:
+
+        let frutas = ["fresa", "mango", "manzana", "uva", "mandarina", "grosella", "piña"];
+        /*
+         * A continuación utilizamos un bucle for para recorrer el array e ir mostrando por consola cada uno de los valores. Esto es lo que habíamos visto anteriormente, 
+         * solo que esta vez utilizaremos la propiedad .length que nos devuelve el número de valores que almacena nuestro array, el número de posiciones que tiene 
+         * para definir la condición. 
+         */
+
+        for (let i = 0; i < frutas.Length; i++) {
+            console.log(frutas[i]);
+        }
+            /*
+         * El bucle se va a repetir mientras i sea menor que la longitud del array (el número de posiciones que tenga). En este caso fruta tiene 7 valores,
+         * con lo que su longitud será 7. El bucle se repetirá mientras i sea menor que 7, pero como la hemos inicializado en 0, i pasará por los siguientes valores
+         * en cada vuelta del bucle: 0,1,2,3,4,5,6 si los sumamos son exactamente 7 valores y que casualmente se corresponden con las posiciones que tiene el array
+         * (recordad que las posiciones empiezan desde 0).
+         * Con esto aprovechamos el valor de la variable i para ir recorriendo cada posición del array y mostrar su valor.
+         * Cuando i sea 7, la condición ya no se cumplirá y el bucle ya no volverá a ejecutarse.
+         */
+
+    </script>
+</body>
+
+</html>

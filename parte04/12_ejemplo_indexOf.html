@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+ Algo que nos puede resultar de gran utilidad a la hora de crear un programa es conocer la presencia de un caracter en concreto
+dentro de una cadena de texto y, sobretodo la posición del mismo. Esto es lo que nos proporciona este método indexOf();
+A este método le pasamos (entre paréntesis) un string, compuesto por un carácter  y este nos devuelve la posición (int) del mismo.
+
+Es importante recordar que las posiciones de una cadena de texto empiezan siempre por 0.
+ */
+
+        /*
+         * Veamos pues un ejemplo, primero vamos a declarar una variable a la que le asignamos un string, el que queramos.
+        */
+        let nombre = "Elena";
+
+        /*
+         * Cómo hemos comentado anteriormente, indexOf() nos devuelve una posición, es decir, un número. Por eso el valor que nos devuelve dicho
+         * método tenemos que almacenarlo en una variable int.
+         * 
+         * En este caso, sólo tenemos que indicar el string o la cadena de texto de la que partimos (nombre), punto y el nombre del método
+         * (indexOf) y entre paréntesis indicar el caracter que queremos buscar. 
+         */
+
+        let posicion = nombre.indexOf("l");
+
+        /*En este punto la variable posicion almacenará un valor, un número, que se corresponde con la posición de la letra l dentro del 
+         nombre Elena, con lo que si mostramos por consola su valor, este tendrá un valor de 1*/
+        console.log(posicion);
+    </script>
+</body>
+
+</html>

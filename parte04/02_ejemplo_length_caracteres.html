@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+ *En este ejemplo observamos como el programa que a primera vista se parece mucho al ejemplo anterior nos da 
+ *un resultado un poco diferente, teniendo el nombre los mismos caracteres que el ejemplo anterior el resultado
+ *nos indica que nombre está compuesto por 12 caracteres. 
+ *
+ *Esto es por que lo que nos devuelve Length es el número de caracteres donde se incluyen los espacios. 
+ *Es algo que tenemos que tener en cuenta y con lo que tenemos que tener mucho cuidado.
+ */
+
+            let nombre = "   Ander    ";
+            let numeroLetras = nombre.length;
+            console.log("El nombre tiene " + numeroLetras + " caracteres");
+           </script>
+</body>
+</html>

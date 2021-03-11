@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo If Else Anidado</title>
+</head>
+
+<body>
+    <script>
+        let correcta; // Creamos una variable de tipo número entero
+        correcta = 5; // Le asignamos el valor 5 (el número que tiene que acertar el usuario)
+
+        let respuesta; // Variable en la que guardaremos la respuesta del usuario
+
+        respuesta = prompt("Adivina el número entre 1 y 10"); // Mostramos en pantalla instrucciones para el usuario y guardamos la respuesta
+        if (respuesta == correcta) // Si ha acertado el número
+        {
+            console.log("Has adivinado el número en el intento 1."); // Le felicitamos
+        }
+        else // Si no acertó el número
+        {
+            console.log("Número incorrecto."); // Le informamos de que no acertó
+            respuesta = prompt("Adivina el número entre 1 y 10"); // Mostramos en pantalla instrucciones para el usuario y guardamos la respuesta
+            if (respuesta == correcta) // Si ha acertado el número
+            {
+                console.log("Has adivinado el número en el intento 2."); // Le felicitamos
+            }
+            else // Si no acertó el número
+            {
+                console.log("Número incorrecto."); // Le informamos de que no acertó
+                respuesta = prompt("Adivina el número entre 1 y 10"); // Mostramos en pantalla instrucciones para el usuario y guardamos la respuesta
+                if (respuesta == correcta) // Si ha acertado el número
+                {
+                    console.log("Has adivinado el número en el intento 3."); // Le felicitamos
+                }
+                else // // Si no acertó el número
+                {
+                    console.log("No te quedan más intentos."); // Le informamos de que no acertó y no quedan más intentos
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

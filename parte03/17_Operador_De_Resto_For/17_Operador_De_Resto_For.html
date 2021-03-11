@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operador de Resto For</title>
+</head>
+
+<body>
+    <script>
+        // Bucle que se repite mientras la variable i (que empieza con un valor de 1) sea menor o igual que 100.
+        // Cada vez que el código se repite, se le añade 1 a i
+        for (let i = 1; i <= 100; i = i + 1) {
+            if (i % 6 == 0) // Si el valor actual de i en la repetición del bucle es múltiplo de 6
+            {
+                console.log(i); // Mostrar el valor en pantalla en su propia línea
+            }
+        }
+
+        // variable con una cadena vacía que utilizaremos para guardar un string al que añadiremos los números que cumplen la condición
+        let resultado = "";
+        // Bucle que se repite mientras la variable i (que empieza con un valor de 1) sea menor o igual que 100.
+        // Cada vez que el código se repite, se le añade 1 a i
+        for (let i = 1; i <= 100; i = i + 1) {
+            if (i % 6 == 0) // Si el valor actual de i en la repetición del bucle es múltiplo de 6
+            {
+                resultado += i + " "; // Mostrar el valor en pantalla seguido de un espacio, sin salto de línea
+            }
+        }
+
+        // Una vez acabado el bucle, la variable resultado tiene la cadena completa que deseamos mostrara, así que ahora la mostramos en consola
+        console.log(resultado);
+    </script>
+</body>
+
+</html>

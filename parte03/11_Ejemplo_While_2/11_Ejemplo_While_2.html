@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo While 2</title>
+</head>
+
+<body>
+    <script>
+        let correcta; // Creamos una variable de número entero
+        correcta = 5; // Le asignamos el valor 5
+
+        let max_intentos; // Creamos una variable de número entero
+        max_intentos = 3; // Le asignamos el valor 3
+
+        let intento; // Creamos una variable de número entero
+        intento = 1; // Le asignamos el valor 1
+
+        let respuesta; // Creamos una variable de número entero, donde guardaremos el valor introducido por el usuario
+
+        while (intento <= max_intentos) // Mientras el intento sea igual o menor que el número máximo de intentos
+        {
+            respuesta = parseInt(prompt("Adivina el número entre 1 y 10")); // Mostar al usuario la instrucción. Obtener el valor del usuario, convertirlo en número entero y guardarlo en la variable respuesta
+            if (respuesta == correcta) // Si la respuesta es el número a adivinar (el 5)
+            {
+                console.log("Has adivinado el número en el intento " + intento); // Felicitar al usuario
+                break; // break hace que el código salga del bucle while (el código continua en la línea 39)
+            } else // Si la respuesta no es el número a adivinar
+            {
+                console.log("Número incorrecto"); // Decir al usuario que no adivinó el número
+            }
+            intento = intento + 1; // Añadir 1 al intento
+        }
+    </script>
+</body>
+
+</html>

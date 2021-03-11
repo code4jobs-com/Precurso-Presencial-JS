@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo While 1</title>
+</head>
+
+<body>
+    <script>
+        let x; // Creamos una variable de número entero
+        x = 1; // Le asignamos el valor 1
+
+        while (x <= 3) // Mientras el valor de x sea menor o igual que 3, repetir las instrucciones entre { y }
+        {
+            console.log(x); // Mostrar el valor de x en pantalla
+            x = x + 1; // Añadir 1 a x
+        }
+
+        x = 1; // Volver a poner el valor de x a 1
+        while (x <= 3) // Mientras el valor de x sea menor o igual a 3, repetir las instrucciones entre { y }
+        {
+            if (x == 2) // Si x es igual a 2
+            {
+                break; // Salir del while (continuar el programa en la línea 33
+            }
+            console.log(x); // Mostrar el valor de x en pantalla
+            x = x + 1; // Añadir 1 a x
+        }
+    </script>
+</body>
+
+</html>

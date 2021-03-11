@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo Else If</title>
+</head>
+
+<body>
+    <script>
+        // Utilizamos estos cinco console.log para mostrar las opciones al usuario
+        console.log("Elige una opción.");
+        console.log("1- Insertar dato.");
+        console.log("2- Editar dato.");
+        console.log("3- Eliminar dato.");
+        console.log("4- Salir.");
+
+        let opcion = prompt("Elige una opción"); // Creamos una variable de tipo entero
+
+        if (opcion == 1) // Si opcion es igual a uno
+        {
+            console.log("Elegiste insertar dato."); // Mostrar mensaje que indica que se eligió la primera opción
+        }
+        else if (opcion == 2) // Si opcion es igual a dos
+        {
+            console.log("Elegiste editar dato."); // Mostrar mensaje que indica que se eligió la segunda opción
+        }
+        else if (opcion == 3) // Si opcion es igual a tres
+        {
+            console.log("Elegiste eliminar dato."); // Mostrar mensaje que indica que se eligió la tercera opción
+        }
+        else if (opcion == 4) // Si opcion es igual a cuatro
+        {
+            console.log("Elegiste salir del programa."); // Mostrar mensaje que indica que se eligió la cuarta opción
+        }
+        else // Si opcion no es igual a ninguna de los valores anteriores (ni 1, 2, 3 ni 4)
+        {
+            console.log("Opción erronea"); // Indicar que no se ha elegido una opcion posible
+        }
+    </script>
+</body>
+
+</html>

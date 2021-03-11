@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    /*
+     * Algo que todavía no hemos mencionado es el hecho que
+     * según el tipo de valor tengamos dentro de una variable
+     * podemos hacer ciertas operaciones sobre ellas.
+     * 
+     * En el caso de cadenas de texto y números enteros
+     * las variables son incompatibles en ciertos casos. 
+     *
+     * Aunque hayamos usado números dentro de variables de
+     * tipo string anteriormente, hay que fijarse en que
+     * estabamos utilizando números que se habían convertido
+     * a texto (por ejemplo cuando concatenábamos textos
+     * con valore numéricos utilizando el símbolo +). Por
+     * otro lado, cuando mostramos a pantalla utilizando
+     * console.log(), podemos pasarle cualquier valor
+     * ya sea entero o de texto, ya que no lo especifica.
+     * Pero ciertas operaciones como multiplicar o dividir
+     * solo pueden realizarse correctamente con valores
+     * de tipo numérico.
+     * 
+     * Si queremos utilizar valores numéricos en cadenas
+     * de texto (o utilizar un número de una cadena de
+     * texto como un valor numérico) tenemos que parsearlos
+     * es decir, hacer que el ordenador los lea y los convierta
+     * al tipo correcto. 
+     */
+
+    let coches;
+    coches = 2;
+
+    /*
+     * En el caso de convertir de un texto a un valor numérico,
+     * utilizamos la instrucción parseInt() y ponemos el
+     * texto dentro de las paréntesis. Esto hará que el ordenador
+     * cree un valor numérico y así podremos utilizarlo.
+     */
+    coches = parseInt("3"); // Con parseInt("3") , hacemos que el ordenador transforme el "3" en un 3.
+    // Cuidado, ya que poner un valor que no puede transformarse a número resultará en un valor NaN (not a number).
+    console.log(typeof(coches)); // Vemos que el valor dentro de coches es ahora de tipo numérico
+
+    let diaDelMes;
+    diaDelMes = 15;
+
+    /*
+     * En el caso de convertir de un valor numérico a texto,
+     * la solución es más sencilla ya que todo lo que tenemos
+     * que hacer es escribir + "" y así se concatena una
+     * cadena de texto vacía a nuestro número, convirtiéndolo
+     * a su vez en un texto.
+     */
+    diaDelMes = diaDelMes + "";
+    console.log(typeof(diaDelMes)); // Vemos que el valor dentro de diaDelMes es ahora de tipo string.
+    </script>
+</body>
+
+</html>

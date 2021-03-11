@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    /*
+     * Uno de los principales problemas de prompt()
+     * es el hecho de que siempre convierte lo que el usuario
+     * escribe en string.
+     * 
+     * Imaginemos que en vez de preguntar el nombre preguntamos 
+     * la edad del usuario. En ese caso, tendríamos:
+     *      let edad;
+     * pero hemos dicho que prompt() crea un string,
+     * y ya hemos visto que no podemos poner un valor de string
+     * dentro de una variable de número entero (int).
+     * 
+     * La solución es exactamente la misma que para cualquier
+     * otro tipo de string que queremos transformar en valor
+     * numérico, es decir, usar parseInt() . Hay que recordar 
+     * que para el ordenador no hay diferencia entre un valor 
+     * que nosotros hemos escrito directamente, como "25" o un 
+     * valor que el usuario a escrito con su teclado y nosotros 
+     * hemos introducido en el programa con prompt()
+     */
+
+    window.alert("Introduce tu edad"); // Escribimos en pantalla las instrucciones para el usuario
+    let edadTexto; // Creamos una variable de tipo string
+    edadTexto = prompt("Introduce tu edad"); // Lo que el usuario escriba en pantalla pasará a ser el valor de la variable edadTexto
+    console.log(typeof (edadTexto)); //Veremos que nos muestra que es un string
+    // Ahora que tenemos la edad en formato texto, pasemoslo a un entero
+    let edad;
+    edad = parseInt(edadTexto);
+
+    console.log("Hola, tienes " + edad + " años"); // Mostramos en pantalla un saludo con el nombre que el usuario ha introducido
+
+    console.log(typeof (edad)); //Veremos que nos muestra que es un número
+    </script>
+</body>
+
+</html>
