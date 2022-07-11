@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 10vh 4vh 10vh;
+    background-color: olive;
+}
+
+#title{
+    color: white;
+}
+
+#list {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin: 0 1vh 0 1vh;
+    padding: 0 2vh 0 2vh;
+    background-color:white;
+    border-radius: 4px;
+ }

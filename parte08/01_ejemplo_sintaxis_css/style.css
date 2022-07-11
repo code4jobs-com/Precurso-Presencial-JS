@@ -1,0 +1,16 @@
+p {
+    color: red;
+    font-size: 30px;
+}
+
+#title {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}

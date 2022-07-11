@@ -1,0 +1,7 @@
+#flex-dir {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+}
